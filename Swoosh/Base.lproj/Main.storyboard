@@ -212,8 +212,35 @@
             </objects>
             <point key="canvasLocation" x="663.07692307692309" y="97.393364928909946"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="5sk-j6-4qy">
+            <objects>
+                <viewController id="xjT-Id-iaf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DyA-HP-H1F">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="ddn-xq-Xmd">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YTR-iB-tKz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ddn-xq-Xmd" firstAttribute="top" secondItem="DyA-HP-H1F" secondAttribute="top" id="0yZ-Dc-2v5"/>
+                            <constraint firstItem="ddn-xq-Xmd" firstAttribute="trailing" secondItem="YTR-iB-tKz" secondAttribute="trailing" id="vC8-yE-OFF"/>
+                            <constraint firstAttribute="bottom" secondItem="ddn-xq-Xmd" secondAttribute="bottom" id="xdc-zy-Ewe"/>
+                            <constraint firstItem="ddn-xq-Xmd" firstAttribute="leading" secondItem="YTR-iB-tKz" secondAttribute="leading" id="y42-73-Kt0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KnQ-r0-IDS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1324.6153846153845" y="112.32227488151658"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
         <image name="welcomeScreenBG" width="414" height="736"/>

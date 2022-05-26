@@ -58,6 +58,9 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="9CG-DO-uRD" kind="show" id="sxA-ml-78Y"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -99,14 +102,14 @@
             <objects>
                 <viewController id="9CG-DO-uRD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BWt-S2-0Uy">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desiredLeagueBG" translatesAutoresizingMaskIntoConstraints="NO" id="CmD-pM-a2w">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WO-oz-3Xt" customClass="BorderButton" customModule="Swoosh">
-                                <rect key="frame" x="45" y="740" width="300" height="50"/>
+                                <rect key="frame" x="45" y="720" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="dQg-bd-7cU"/>
                                 </constraints>
@@ -117,6 +120,9 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="xjT-Id-iaf" kind="show" id="CZR-Fi-iLc"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Mut-cF-VqG">
                                 <rect key="frame" x="0.0" y="84" width="390" height="95"/>
@@ -205,21 +211,22 @@
                             <constraint firstItem="wB1-O2-pzc" firstAttribute="bottom" secondItem="8WO-oz-3Xt" secondAttribute="bottom" constant="20" id="ueq-5e-yTF"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ewb-wY-kHI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ngx-S8-3rG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="663.07692307692309" y="97.393364928909946"/>
+            <point key="canvasLocation" x="805" y="97"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5sk-j6-4qy">
             <objects>
                 <viewController id="xjT-Id-iaf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DyA-HP-H1F">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="ddn-xq-Xmd">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="p0I-3D-BLM">
                                 <rect key="frame" x="45" y="239" width="300" height="50"/>
@@ -275,7 +282,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWU-bG-Byu" customClass="BorderButton" customModule="Swoosh">
-                                <rect key="frame" x="45" y="740" width="300" height="50"/>
+                                <rect key="frame" x="45" y="720" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="3n2-WR-KcZ"/>
                                     <constraint firstAttribute="height" constant="50" id="bY3-e7-onE"/>
@@ -307,10 +314,11 @@
                             <constraint firstItem="ddn-xq-Xmd" firstAttribute="leading" secondItem="YTR-iB-tKz" secondAttribute="leading" id="ufn-ed-eqz"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="MFu-j1-WZn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KnQ-r0-IDS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1330.7692307692307" y="96.682464454976298"/>
+            <point key="canvasLocation" x="1542" y="97"/>
         </scene>
     </scenes>
     <resources>

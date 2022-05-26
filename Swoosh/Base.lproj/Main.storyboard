@@ -108,8 +108,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WO-oz-3Xt" customClass="BorderButton" customModule="Swoosh">
                                 <rect key="frame" x="45" y="740" width="300" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="KNf-Nq-cQ8"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="LdQ-2m-iQs"/>
                                     <constraint firstAttribute="height" constant="50" id="dQg-bd-7cU"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -276,7 +274,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWU-bG-Byu" customClass="BorderButton" customModule="Swoosh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWU-bG-Byu" customClass="BorderButton" customModule="Swoosh">
                                 <rect key="frame" x="45" y="740" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="3n2-WR-KcZ"/>
@@ -301,8 +299,10 @@
                             <constraint firstItem="Oh4-F0-6n8" firstAttribute="top" secondItem="YTR-iB-tKz" secondAttribute="top" constant="40" id="GGf-dX-7tA"/>
                             <constraint firstItem="YTR-iB-tKz" firstAttribute="bottom" secondItem="ZWU-bG-Byu" secondAttribute="bottom" constant="20" id="P46-Y7-OLh"/>
                             <constraint firstItem="YTR-iB-tKz" firstAttribute="trailing" secondItem="Oh4-F0-6n8" secondAttribute="trailing" id="PJt-oD-uYa"/>
+                            <constraint firstItem="ZWU-bG-Byu" firstAttribute="trailing" secondItem="p0I-3D-BLM" secondAttribute="trailing" id="abq-Xz-yUJ"/>
                             <constraint firstItem="ddn-xq-Xmd" firstAttribute="trailing" secondItem="YTR-iB-tKz" secondAttribute="trailing" id="dh3-5a-MDK"/>
                             <constraint firstAttribute="bottom" secondItem="ddn-xq-Xmd" secondAttribute="bottom" id="iq8-3C-9Zw"/>
+                            <constraint firstItem="ZWU-bG-Byu" firstAttribute="leading" secondItem="p0I-3D-BLM" secondAttribute="leading" id="jul-Zg-Erg"/>
                             <constraint firstItem="ddn-xq-Xmd" firstAttribute="top" secondItem="DyA-HP-H1F" secondAttribute="top" id="tkv-gs-JPJ"/>
                             <constraint firstItem="ddn-xq-Xmd" firstAttribute="leading" secondItem="YTR-iB-tKz" secondAttribute="leading" id="ufn-ed-eqz"/>
                         </constraints>

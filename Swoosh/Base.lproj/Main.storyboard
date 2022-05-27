@@ -109,7 +109,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desiredLeagueBG" translatesAutoresizingMaskIntoConstraints="NO" id="CmD-pM-a2w">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WO-oz-3Xt" customClass="BorderButton" customModule="Swoosh">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WO-oz-3Xt" customClass="BorderButton" customModule="Swoosh">
                                 <rect key="frame" x="45" y="720" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="dQg-bd-7cU"/>
@@ -162,6 +162,9 @@
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onMenTapped:" destination="9CG-DO-uRD" eventType="touchUpInside" id="lcL-6M-zkJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kf1-pE-TS7" customClass="BorderButton" customModule="Swoosh">
                                         <rect key="frame" x="0.0" y="85" width="300" height="50"/>
@@ -175,6 +178,9 @@
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onWomenTapped:" destination="9CG-DO-uRD" eventType="touchUpInside" id="cYa-k8-JLQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tzl-vt-iM2" customClass="BorderButton" customModule="Swoosh">
                                         <rect key="frame" x="0.0" y="170" width="300" height="50"/>
@@ -188,6 +194,9 @@
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="9CG-DO-uRD" eventType="touchUpInside" id="osi-FV-Avt"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -227,6 +236,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nextButton" destination="8WO-oz-3Xt" id="d8F-hO-FKY"/>
                         <segue destination="xjT-Id-iaf" kind="show" identifier="skillVCSegue" id="i2k-Fu-wxD"/>
                     </connections>
                 </viewController>

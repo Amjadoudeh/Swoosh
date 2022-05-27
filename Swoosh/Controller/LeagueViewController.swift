@@ -17,20 +17,19 @@ class LeagueViewController: UIViewController {
     }
     
     @IBAction func onMenTapped(_ sender: Any) {
-        player.desiredLeague = "men"
-        nextButton.isEnabled = true
-        
+        selectLeague(leagueType: "men")
     }
     
     @IBAction func onWomenTapped(_ sender: Any) {
-        player.desiredLeague = "women"
-        nextButton.isEnabled = true
+        selectLeague(leagueType: "women")
     }
     
     @IBAction func onCoedTapped(_ sender: Any) {
-        player.desiredLeague = "coed"
-        nextButton.isEnabled = true
+        selectLeague(leagueType: "coed")
     }
     
-    
+    func selectLeague(leagueType: String) {
+        player.desiredLeague = leagueType
+        nextButton.isEnabled = true
+    }
 }

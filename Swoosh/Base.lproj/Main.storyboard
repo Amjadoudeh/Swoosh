@@ -159,6 +159,9 @@
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didSelectMan:" destination="9CG-DO-uRD" eventType="touchUpInside" id="yEi-bA-mC0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kf1-pE-TS7" customClass="BorderButton" customModule="Swoosh">
                                         <rect key="frame" x="0.0" y="85" width="300" height="50"/>
@@ -172,6 +175,9 @@
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didSelectWoman:" destination="9CG-DO-uRD" eventType="touchUpInside" id="4lR-WB-vaD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tzl-vt-iM2" customClass="BorderButton" customModule="Swoosh">
                                         <rect key="frame" x="0.0" y="170" width="300" height="50"/>
@@ -185,6 +191,9 @@
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didSelectCoed:" destination="9CG-DO-uRD" eventType="touchUpInside" id="rZ8-ze-dXX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -224,6 +233,11 @@
                             <constraint firstItem="wB1-O2-pzc" firstAttribute="bottom" secondItem="8WO-oz-3Xt" secondAttribute="bottom" constant="20" id="ueq-5e-yTF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="coedButton" destination="Tzl-vt-iM2" id="Gln-bp-p51"/>
+                        <outlet property="menButton" destination="A1V-Dm-0VN" id="lVh-KH-gAY"/>
+                        <outlet property="womanButton" destination="kf1-pE-TS7" id="ymh-4M-gdx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ngx-S8-3rG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="SxV-Ro-3Ne" userLabel="Exit" sceneMemberID="exit"/>

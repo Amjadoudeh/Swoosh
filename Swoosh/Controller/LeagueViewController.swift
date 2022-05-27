@@ -6,6 +6,7 @@ enum desiredLeague {
 
 class LeagueViewController: UIViewController {
     // MARK: - Properties
+    private static let segue = "segueToSkillViewController"
     private var selectedLeague: desiredLeague?
     
     @IBOutlet weak var menButton: BorderButton!
@@ -21,6 +22,7 @@ class LeagueViewController: UIViewController {
     
     // MARK: - Functions
     
+    //verify wich one is selected to change its background
     private func selectedButton(selected: desiredLeague) {
         switch selected {
         case .men:
@@ -40,6 +42,7 @@ class LeagueViewController: UIViewController {
     
     
     // MARK: - Actions
+    
     @IBAction func didSelectMan(_ sender: Any) {
         selectedLeague = .men
         selectedButton(selected: selectedLeague!)
@@ -51,6 +54,16 @@ class LeagueViewController: UIViewController {
     @IBAction func didSelectCoed(_ sender: Any) {
         selectedLeague = .coed
         selectedButton(selected: selectedLeague!)
+    }
+    
+    @IBAction func didTapNextButton(_ sender: Any) {
+        guard selectedLeague != nil else {
+            errorButtonAnimation().buttonAnimation(button: menButton)
+            errorButtonAnimation().buttonAnimation(button: womanButton)
+            errorButtonAnimation().buttonAnimation(button: coedButton)
+            return
+        }
+        performSegue(withIdentifier: LeagueViewController.segue, sender: nil)
     }
     
 

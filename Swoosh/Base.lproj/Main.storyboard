@@ -119,7 +119,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="xjT-Id-iaf" kind="show" id="CZR-Fi-iLc"/>
+                                    <action selector="didTapNextButton:" destination="9CG-DO-uRD" eventType="touchUpInside" id="p1P-XM-fr2"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Mut-cF-VqG">
@@ -237,6 +237,7 @@
                         <outlet property="coedButton" destination="Tzl-vt-iM2" id="Gln-bp-p51"/>
                         <outlet property="menButton" destination="A1V-Dm-0VN" id="lVh-KH-gAY"/>
                         <outlet property="womanButton" destination="kf1-pE-TS7" id="ymh-4M-gdx"/>
+                        <segue destination="xjT-Id-iaf" kind="presentation" identifier="segueToSkillViewController" id="1QZ-dX-TwF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ngx-S8-3rG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

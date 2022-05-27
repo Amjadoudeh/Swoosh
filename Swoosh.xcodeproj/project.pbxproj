@@ -17,6 +17,7 @@
 		70C4E7E82840C9A3000820AF /* LeagueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C4E7E72840C9A3000820AF /* LeagueViewController.swift */; };
 		70C4E7EA2840C9C8000820AF /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C4E7E92840C9C8000820AF /* SkillViewController.swift */; };
 		A37F18022840E0C8003A0C6D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37F18012840E0C8003A0C6D /* UIColorExtension.swift */; };
+		A37F18052840E4E3003A0C6D /* errorButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37F18042840E4E3003A0C6D /* errorButtonAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		70C4E7E72840C9A3000820AF /* LeagueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewController.swift; sourceTree = "<group>"; };
 		70C4E7E92840C9C8000820AF /* SkillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
 		A37F18012840E0C8003A0C6D /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		A37F18042840E4E3003A0C6D /* errorButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = errorButtonAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +84,7 @@
 		70A198A8283A99F700495A8B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				70A198A9283A9A4F00495A8B /* BorderButton.swift */,
+				A37F18032840E4CC003A0C6D /* Buttons */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -110,6 +112,15 @@
 				A37F18012840E0C8003A0C6D /* UIColorExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		A37F18032840E4CC003A0C6D /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				70A198A9283A9A4F00495A8B /* BorderButton.swift */,
+				A37F18042840E4E3003A0C6D /* errorButtonAnimation.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +197,7 @@
 				70A19897283A8BF700495A8B /* WelcomeViewController.swift in Sources */,
 				A37F18022840E0C8003A0C6D /* UIColorExtension.swift in Sources */,
 				70A19893283A8BF700495A8B /* AppDelegate.swift in Sources */,
+				A37F18052840E4E3003A0C6D /* errorButtonAnimation.swift in Sources */,
 				70A19895283A8BF700495A8B /* SceneDelegate.swift in Sources */,
 				70C4E7E82840C9A3000820AF /* LeagueViewController.swift in Sources */,
 				70C4E7EA2840C9C8000820AF /* SkillViewController.swift in Sources */,

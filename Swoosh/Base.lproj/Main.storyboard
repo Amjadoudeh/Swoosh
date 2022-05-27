@@ -122,7 +122,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="xjT-Id-iaf" kind="show" id="CZR-Fi-iLc"/>
+                                    <action selector="onNextTapped:" destination="9CG-DO-uRD" eventType="touchUpInside" id="Ec3-FF-lLS"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Mut-cF-VqG">
@@ -226,6 +226,9 @@
                             <constraint firstItem="wB1-O2-pzc" firstAttribute="bottom" secondItem="8WO-oz-3Xt" secondAttribute="bottom" constant="20" id="ueq-5e-yTF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="xjT-Id-iaf" kind="show" identifier="skillVCSegue" id="i2k-Fu-wxD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ngx-S8-3rG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="SxV-Ro-3Ne" userLabel="Exit" sceneMemberID="exit"/>

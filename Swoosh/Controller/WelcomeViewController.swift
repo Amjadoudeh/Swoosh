@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
   
     @IBOutlet weak var swoosh: UIImageView!

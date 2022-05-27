@@ -102,6 +102,7 @@
 		70C4E7E52840C25B000820AF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				70C4E7EB2840E31D000820AF /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,6 +201,7 @@
 				A37F18052840E4E3003A0C6D /* errorButtonAnimation.swift in Sources */,
 				70A19895283A8BF700495A8B /* SceneDelegate.swift in Sources */,
 				70C4E7E82840C9A3000820AF /* LeagueViewController.swift in Sources */,
+				70C4E7EC2840E31D000820AF /* Player.swift in Sources */,
 				70C4E7EA2840C9C8000820AF /* SkillViewController.swift in Sources */,
 				70A198AA283A9A4F00495A8B /* BorderButton.swift in Sources */,
 			);

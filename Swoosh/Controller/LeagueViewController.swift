@@ -3,7 +3,6 @@ import UIKit
 enum desiredLeague {
     case men, woman, coed
 }
-
 class LeagueViewController: UIViewController {
     // MARK: - Properties
     private static let segue = "segueToSkillViewController"
@@ -18,7 +17,6 @@ class LeagueViewController: UIViewController {
         super.viewDidLoad()
     }
     // MARK: - Set up
-    
     
     // MARK: - Functions
     
@@ -66,6 +64,5 @@ class LeagueViewController: UIViewController {
         performSegue(withIdentifier: LeagueViewController.segue, sender: nil)
     }
     
-
 }
 // MARK: - Extensions

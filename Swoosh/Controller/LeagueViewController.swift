@@ -63,6 +63,10 @@ class LeagueViewController: UIViewController {
         }
         performSegue(withIdentifier: LeagueViewController.segue, sender: nil)
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let skillVC = segue.destination as? SkillViewController {
+            skillVC.player = player
+        } 
+    }
 }
 // MARK: - Extensions

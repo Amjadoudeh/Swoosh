@@ -1,10 +1,8 @@
 import UIKit
 
-enum desiredLeague {
-    case men, woman, coed
-}
 class LeagueViewController: UIViewController {
     // MARK: - Properties
+
     private static let segue = "segueToSkillViewController"
     private var selectedLeague: desiredLeague?
     
@@ -65,7 +63,7 @@ class LeagueViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let skillVC = segue.destination as? SkillViewController {
-            skillVC.player = player
+            skillVC.league = selectedLeague
         } 
     }
 }

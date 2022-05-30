@@ -236,6 +236,7 @@
                     <connections>
                         <outlet property="coedButton" destination="Tzl-vt-iM2" id="Gln-bp-p51"/>
                         <outlet property="menButton" destination="A1V-Dm-0VN" id="lVh-KH-gAY"/>
+                        <outlet property="nextButton" destination="8WO-oz-3Xt" id="Jog-vi-zES"/>
                         <outlet property="womanButton" destination="kf1-pE-TS7" id="ymh-4M-gdx"/>
                         <segue destination="xjT-Id-iaf" kind="presentation" identifier="segueToSkillViewController" id="1QZ-dX-TwF"/>
                     </connections>
@@ -271,6 +272,9 @@
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapBeginner:" destination="xjT-Id-iaf" eventType="touchUpInside" id="bVe-h2-deR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjk-qz-i4E" customClass="BorderButton" customModule="Swoosh">
                                         <rect key="frame" x="165" y="0.0" width="135" height="50"/>
@@ -284,6 +288,9 @@
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapBaller:" destination="xjT-Id-iaf" eventType="touchUpInside" id="Lt0-ca-aLo"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -322,6 +329,9 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapFinish:" destination="xjT-Id-iaf" eventType="touchUpInside" id="7Vo-U7-BHa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YTR-iB-tKz"/>
@@ -343,6 +353,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MFu-j1-WZn"/>
+                    <connections>
+                        <outlet property="ballerButton" destination="Sjk-qz-i4E" id="lc1-yd-6BP"/>
+                        <outlet property="beginnerButton" destination="X94-Z6-rjH" id="bgt-zV-14c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KnQ-r0-IDS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

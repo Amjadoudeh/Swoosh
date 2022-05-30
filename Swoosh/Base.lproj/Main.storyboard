@@ -236,6 +236,7 @@
                     <connections>
                         <outlet property="coedButton" destination="Tzl-vt-iM2" id="Gln-bp-p51"/>
                         <outlet property="menButton" destination="A1V-Dm-0VN" id="lVh-KH-gAY"/>
+                        <outlet property="nextButton" destination="8WO-oz-3Xt" id="Jog-vi-zES"/>
                         <outlet property="womanButton" destination="kf1-pE-TS7" id="ymh-4M-gdx"/>
                         <segue destination="xjT-Id-iaf" kind="presentation" identifier="segueToSkillViewController" id="1QZ-dX-TwF"/>
                     </connections>

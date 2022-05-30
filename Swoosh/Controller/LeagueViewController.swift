@@ -9,6 +9,7 @@ class LeagueViewController: UIViewController {
     @IBOutlet weak var menButton: BorderButton!
     @IBOutlet weak var womanButton: BorderButton!
     @IBOutlet weak var coedButton: BorderButton!
+    @IBOutlet weak var nextButton: BorderButton!
     
     // MARK: - Life cycle
     override func viewDidLoad() {
@@ -23,16 +24,19 @@ class LeagueViewController: UIViewController {
         switch selected {
         case .men:
             menButton.backgroundColor = UIColor.ButtonsColor.selectedInDesiredLeague
+            SelectedButtonAnimation().scaleSelectedButton(selectedButton: menButton, otherButtons: [womanButton, coedButton])
             womanButton.backgroundColor = UIColor.ButtonsColor.notSelected
             coedButton.backgroundColor = UIColor.ButtonsColor.notSelected
         case .woman:
             menButton.backgroundColor = UIColor.ButtonsColor.notSelected
             womanButton.backgroundColor = UIColor.ButtonsColor.selectedInDesiredLeague
+            SelectedButtonAnimation().scaleSelectedButton(selectedButton: womanButton, otherButtons: [menButton, coedButton])
             coedButton.backgroundColor = UIColor.ButtonsColor.notSelected
         case .coed:
             menButton.backgroundColor = UIColor.ButtonsColor.notSelected
             womanButton.backgroundColor = UIColor.ButtonsColor.notSelected
             coedButton.backgroundColor = UIColor.ButtonsColor.selectedInDesiredLeague
+            SelectedButtonAnimation().scaleSelectedButton(selectedButton: coedButton, otherButtons: [womanButton, menButton])
         }
     }
     
@@ -54,9 +58,9 @@ class LeagueViewController: UIViewController {
     
     @IBAction func didTapNextButton(_ sender: Any) {
         guard selectedLeague != nil else {
-            errorButtonAnimation().buttonAnimation(button: menButton)
-            errorButtonAnimation().buttonAnimation(button: womanButton)
-            errorButtonAnimation().buttonAnimation(button: coedButton)
+            ErrorButtonAnimation().buttonAnimation(button: menButton)
+            ErrorButtonAnimation().buttonAnimation(button: womanButton)
+            ErrorButtonAnimation().buttonAnimation(button: coedButton)
             return
         }
         performSegue(withIdentifier: LeagueViewController.segue, sender: nil)

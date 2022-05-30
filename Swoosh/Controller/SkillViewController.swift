@@ -28,6 +28,7 @@ class SkillViewController: UIViewController {
             
             //select baller
             ballerButton.backgroundColor = UIColor.ButtonsColor.selectedInLevel
+            SelectedButtonAnimation().scaleSelectedButton(selectedButton: ballerButton, otherButtons: [beginnerButton])
             
         case .beginner :
             //select begginer
@@ -36,7 +37,7 @@ class SkillViewController: UIViewController {
             
             // unselect baller
             ballerButton.backgroundColor = UIColor.ButtonsColor.notSelected
-
+            SelectedButtonAnimation().scaleSelectedButton(selectedButton: beginnerButton, otherButtons: [ballerButton])
         }
     }
     
@@ -57,8 +58,8 @@ class SkillViewController: UIViewController {
     // finish
     @IBAction func didTapFinish(_ sender: Any) {
         guard let level = level else {
-            errorButtonAnimation().buttonAnimation(button: beginnerButton)
-            errorButtonAnimation().buttonAnimation(button: ballerButton)
+            ErrorButtonAnimation().buttonAnimation(button: beginnerButton)
+            ErrorButtonAnimation().buttonAnimation(button: ballerButton)
             return
         }
         guard let league = league else {
